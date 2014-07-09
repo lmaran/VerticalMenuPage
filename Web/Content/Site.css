@@ -1,0 +1,195 @@
+﻿/*      wrappers
+===============================*/
+#wrapper {
+    padding-left: 250px;
+    transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+    margin-left: -250px;
+    width: 250px;
+    background: #000;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x:hidden;
+    z-index: 1000;
+    transition: all 0.4s ease 0s;
+    top:0;
+}
+
+#page-content-wrapper {
+    width: 100%;
+}
+
+
+/*     page content 
+===============================*/
+.page-content {
+    padding: 70px 0 0 0;
+}
+
+#content-header {
+    position: fixed;
+    left:250px;
+    background-color:#fff;
+    box-shadow: 0 1px 0 rgba(0,0,0,.07);
+    width:100%;
+    transition: all 0.4s ease 0s;
+    z-index:1000;
+    height: 55px;
+    line-height: 50px;
+}
+
+#content-header h1 {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+
+/*      sidebar content
+===============================*/
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-nav li {
+    line-height: 40px;
+    text-indent: 20px;
+}
+
+.sidebar-nav li a {
+    color: #999999;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebar-nav li a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+    text-decoration: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand{
+    height: 55px;
+    line-height: 50px;
+    font-size: 18px;
+    box-shadow: 0 1px 0 #1a1919;
+}
+
+.sidebar-nav > .sidebar-brand  a   {
+    display:inline;
+    color: #fff;
+    background: none;
+    border-color:#000;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+    border-color:#423e3e;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+
+/*      open/close buttons
+===============================*/
+
+#open-sidebar-btn {
+    display: none;
+}
+
+#close-sidebar-btn{
+    text-indent:0;
+    float:right;
+    margin-top:10px;
+    margin-right:10px;
+}
+
+
+/*     used to detect screen size in Js
+===============================*/
+body:after {
+	content: 'large';
+	display: none;
+}
+
+/*     smaller screen only 
+===============================*/
+@media (max-width:767px) {
+
+    body:after { content: 'small'; }
+
+    #wrapper {
+      padding-left: 0px;
+    }
+
+    #content-header {
+        background-color:rgb(191, 185, 185);
+        left:0;
+    }
+
+    #open-sidebar-btn {
+      display: inline-block;
+    }
+
+}
+
+
+/*     toggle classes 
+===============================*/
+#wrapper.active {
+    padding-left: 250px;
+}
+
+#wrapper.inactive {
+    padding-left: 0px;
+}
+
+#content-header.active {
+    left: 250px;
+}
+
+#content-header.inactive {
+    left: 0px;
+}
+
+#open-sidebar-btn.active{
+    display:inline-block;
+}
+
+#open-sidebar-btn.inactive{
+    display:none;
+}
+
+
+/*     browser happy 
+===============================*/
+.browsehappy {
+    margin: 0.7em 0;
+    background: #ef6969;
+    color: #000;
+    padding: 0.2em 0;
+    position:fixed;
+    width:100%;
+    z-index:9999;
+}
