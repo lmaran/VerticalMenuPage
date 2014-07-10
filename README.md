@@ -12,6 +12,7 @@ All original features were preserved:
 
  - off canvas, full height, vertical menu
  - responsive design 
+ - IE9+
 
 ...and also added:
 
