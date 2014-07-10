@@ -1,6 +1,6 @@
-VerticalMenuPage
+Off-Canvas Vertical Menu
 ================
-[Live demo.](https://dl.dropboxusercontent.com/u/43065769/Dev/VerticalMenuPage/index.html "Online demo")
+[Live demo](https://dl.dropboxusercontent.com/u/43065769/Dev/VerticalMenuPage/index.html "Online demo")
 
 Based on an idea stolen from [StartBootstrap](http://startbootstrap.com/simple-sidebar).
 
@@ -23,4 +23,4 @@ All original features were preserved:
 All in pure HTML, CSS, JS (no JQuery dependency).
 
 A remark: 
-For simplicyty, I've putted together all parts (HTML, CSS, JS) in the `index.html` file so that you can access them via 'View Source'.
+For simplicyty, I've putted together all parts (HTML, CSS, JS) in the `index.html` file so that you can access them via 'View Source' in [live demo](https://dl.dropboxusercontent.com/u/43065769/Dev/VerticalMenuPage/index.html "Online demo").
